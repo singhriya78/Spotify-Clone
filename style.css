@@ -337,3 +337,106 @@ a{
 .controls-bar {
     width: 80px;
 }
+
+@media (max-width: 768px) {
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .main{
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 0.5rem 90px 0.5rem;
+    }
+
+    .sidebar{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav{
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .nav-options{
+        line-height: normal;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .library{
+        display: none; 
+    }
+
+    .main-content{
+        padding: 0 0.75rem;
+        height: auto;
+        overflow: visible;
+    }
+
+    .card{
+        width: 130px;
+        margin-left: 0.75rem;
+    }
+
+    .sticky-nav-options .nav-item.hide{
+        display: none;
+    }
+
+    .music-player{
+        padding: 0 0.5rem;
+        height: 64px;
+    }
+
+    .album{
+        width: 45%;
+        gap: 6px;
+    }
+
+    .album-title, .album-info{
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .album-img{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .player{
+        width: 40%;
+    }
+
+    .playback-bar{
+        display: none; 
+    }
+
+    .controls{
+        display: none; 
+    }
+}
+
+@media (max-width: 420px) {
+    .card{
+        width: 105px;
+        padding: 0.75rem;
+    }
+
+    .card-info{
+        display: none; 
+    }
+
+    .album-title, .album-info{
+        max-width: 90px;
+    }
+
+    .player-control-icon{
+        margin-right: 1rem;
+    }
+}
