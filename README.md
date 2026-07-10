@@ -1,52 +1,78 @@
-# Spotify Web Player Clone
+# Spotify — Web Player Clone
 
-A pixel-perfect(ish) clone of Spotify's web player —
-built from scratch using only HTML and CSS. No frameworks,
-no JavaScript, just pure code and a whole lot of debugging.
+A responsive recreation of Spotify's web player interface, built from scratch using pure HTML and CSS — no frameworks, no JavaScript, no libraries beyond Google Fonts and Font Awesome icons.
 
-## Features
+> **Disclaimer:** This is a non-functional student project built purely for learning frontend web development. It is **not affiliated with, endorsed by, or connected to Spotify AB** in any way. No audio playback, streaming, or account functionality is implemented — all player controls are static UI elements for demonstration only. "Spotify" is a registered trademark of Spotify AB.
 
-- Sidebar with Home, Search and Your Library
-- Library boxes with Create Playlist and Browse Podcasts
-- Sticky navbar with Explore Premium and Install App buttons
-- Recently Played, Trending Now and Featured Charts sections
-- Music player bar fixed at the bottom
-- Album art, song title and artist name in the player
-- Playback controls with progress bar
-- Volume controls with slider
-- Add to liked songs icon next to song info
-- Font Awesome 7 icons throughout
+---
+
+##  Features
+
+- Sidebar navigation with Home, Search, and Your Library sections
+- "Create Playlist" and "Browse Podcasts" promo cards
+- Sticky top navigation bar with playback and install-app shortcuts
+- Scrollable content sections — Recently Played, Trending Now, Featured Charts
+- Custom-styled album/track cards with hover-ready layout
+- Fixed bottom music player with album info, playback controls, and progress bar
+- Custom-styled range sliders for progress and volume
+- **Fully responsive** — sidebar collapses into a compact top bar and the player simplifies on mobile
 - Google Fonts — Montserrat
-- Responsive — hides elements on smaller screens
+- Font Awesome 7 icons throughout
 
 ## Built With
 
 - HTML5
-- CSS3
+- CSS3 (Flexbox, media queries)
 - Font Awesome 7
-- Google Fonts (Montserrat)
+- Google Fonts
+- Deployed on [Vercel](https://vercel.com/)
 
-## How to Run
+## Project Structure
 
-No installation needed.
-Just download the project, open index.html
-in your browser and it works!
+```
+spotify-clone/
+├── index.html
+├── style.css
+└── assets/
+    ├── library_icon.png
+    ├── backward_icon.png
+    ├── forward_icon.png
+    ├── album.jpg
+    ├── player_icon1-5.png
+    └── card1-6img.jpeg
+```
+
+##  How to Run Locally
+
+No installation or build step needed.
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/singhriya78/Spotify-Clone.git
+   ```
+2. Open `index.html` directly in your browser — that's it.
+
+##  Responsive Design
+
+The layout adapts across two breakpoints (mobile ≤768px and small mobile ≤420px):
+- The sidebar collapses into a slim horizontal top bar, and the playlist/podcast promo boxes are hidden to save space
+- Content switches from a fixed layout to normal page scroll
+- The bottom music player simplifies to show only album info and playback controls — the progress bar and secondary controls (volume, queue, devices) are hidden, similar to Spotify's own mobile player
 
 ## What I Learned
 
-- CSS Flexbox for complex layouts
-- position: fixed for the music player bar
-- Custom range input styling with webkit
-- Font Awesome icon integration
-- Parent vs child CSS relationships
-- Git and GitHub workflow
+- Building multi-panel app layouts with Flexbox (sidebar + main content + fixed player)
+- Styling native `<input type="range">` sliders with custom thumbs and tracks
+- Managing `position: sticky` and `position: fixed` together in a scrollable layout
+- Progressive simplification for mobile — deciding what to hide vs. restructure rather than just shrinking everything
+- Git/GitHub workflow for version control and deployment
+- Deploying and troubleshooting a live site on Vercel
 
 ## Author
 
-Made with effort and curiosity by [Riya Raj]
-Learning web development one clone at a time.
+Made with effort and curiosity by **Riya Raj**
+Learning web development, one clone at a time.
 
-## Disclaimer
+## License
 
-This project is made for learning purposes only.
-Spotify is a trademark of Spotify AB.
+This project is for educational purposes only and is not intended for commercial use.
